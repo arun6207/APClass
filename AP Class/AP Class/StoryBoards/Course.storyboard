@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a27-SE-CWg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Course-->
+        <scene sceneID="sER-8F-Qcu">
+            <objects>
+                <navigationController title="Course" id="a27-SE-CWg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Course" image="book.circle" catalog="system" id="WZX-9U-zcR"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eJG-sb-LKE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5zA-yR-MoB" kind="relationship" relationship="rootViewController" id="VUN-0P-LvA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nse-J1-4Mo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-946" y="85"/>
+        </scene>
+        <!--Course View Controller-->
+        <scene sceneID="HEt-s1-8aR">
+            <objects>
+                <viewController storyboardIdentifier="CourseViewController" id="5zA-yR-MoB" customClass="CourseViewController" customModule="AP_Class" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D2Q-lR-4uY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Your course  code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqh-50-Gjs">
+                                <rect key="frame" x="30" y="118" width="354" height="23"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WD5-aQ-2eE">
+                                <rect key="frame" x="20" y="171" width="374" height="642"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WJt-9a-uLe">
+                                    <size key="itemSize" width="150" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CourseCollectionViewCell" id="NJu-rJ-qDz" customClass="CourseCollectionViewCell" customModule="AP_Class" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hcR-03-Jas">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="courseId" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aI-Qg-wfj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9aI-Qg-wfj" firstAttribute="leading" secondItem="hcR-03-Jas" secondAttribute="leading" id="A7a-g5-hB2"/>
+                                                <constraint firstAttribute="trailing" secondItem="9aI-Qg-wfj" secondAttribute="trailing" id="BnP-T5-B3U"/>
+                                                <constraint firstAttribute="bottom" secondItem="9aI-Qg-wfj" secondAttribute="bottom" id="p8F-yk-1Zm"/>
+                                                <constraint firstItem="9aI-Qg-wfj" firstAttribute="top" secondItem="hcR-03-Jas" secondAttribute="top" id="vxZ-zN-rU3"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="courseIdLable" destination="9aI-Qg-wfj" id="GBU-um-kA5"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="5zA-yR-MoB" id="2YG-yR-uTV"/>
+                                    <outlet property="delegate" destination="5zA-yR-MoB" id="Seb-XA-or5"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bJA-bd-eKp" firstAttribute="trailing" secondItem="WD5-aQ-2eE" secondAttribute="trailing" constant="20" id="0nt-RD-5u8"/>
+                            <constraint firstItem="Vqh-50-Gjs" firstAttribute="leading" secondItem="bJA-bd-eKp" secondAttribute="leading" constant="30" id="eeB-jY-ndJ"/>
+                            <constraint firstItem="bJA-bd-eKp" firstAttribute="trailing" secondItem="Vqh-50-Gjs" secondAttribute="trailing" constant="30" id="h7X-4Y-f0m"/>
+                            <constraint firstItem="bJA-bd-eKp" firstAttribute="bottom" secondItem="WD5-aQ-2eE" secondAttribute="bottom" id="iJH-u1-ge6"/>
+                            <constraint firstItem="Vqh-50-Gjs" firstAttribute="top" secondItem="bJA-bd-eKp" secondAttribute="top" constant="30" id="nCW-Cf-bhB"/>
+                            <constraint firstItem="WD5-aQ-2eE" firstAttribute="top" secondItem="Vqh-50-Gjs" secondAttribute="bottom" constant="30" id="y1X-dw-43a"/>
+                            <constraint firstItem="WD5-aQ-2eE" firstAttribute="leading" secondItem="bJA-bd-eKp" secondAttribute="leading" constant="20" id="z46-Yf-V1L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bJA-bd-eKp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6aZ-Ha-z29"/>
+                    <connections>
+                        <outlet property="courseCollectionView" destination="WD5-aQ-2eE" id="jdG-Fi-Pr0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ybs-mi-NiR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="-114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book.circle" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
