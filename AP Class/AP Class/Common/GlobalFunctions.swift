@@ -23,3 +23,16 @@ func showErrorAlert(message: String, viewController: UIViewController) {
     viewController.present(alertController, animated: true, completion: nil)
     
 }
+
+func initiateStoryBoard(name: String) {
+    let storyBoard = UIStoryboard(name: name, bundle: nil)
+    guard
+        let vc = storyBoard.instantiateInitialViewController(),
+        let keyWindow = UIApplication.shared.connectedScenes
+                        .filter({$0.activationState == .foregroundActive})
+                        .map({$0 as? UIWindowScene})
+                        .compactMap({$0})
+                        .first?.windows
+                        .filter({$0.isKeyWindow}).first else { return }
+    keyWindow.rootViewController = vc
+}
