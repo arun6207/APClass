@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B629CB2124043F06004F3DF2 /* TeacherClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B629CB2024043F06004F3DF2 /* TeacherClassViewController.swift */; };
+		B629CB2324043F13004F3DF2 /* TeacherGradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B629CB2224043F13004F3DF2 /* TeacherGradeViewController.swift */; };
+		B629CB2524043F51004F3DF2 /* Class.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B629CB2424043F51004F3DF2 /* Class.storyboard */; };
+		B629CB2724043FA0004F3DF2 /* Grade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B629CB2624043FA0004F3DF2 /* Grade.storyboard */; };
 		B683C4F7240276A70083AE83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683C4F6240276A70083AE83 /* AppDelegate.swift */; };
 		B683C4F9240276A70083AE83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683C4F8240276A70083AE83 /* SceneDelegate.swift */; };
 		B683C4FB240276A70083AE83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683C4FA240276A70083AE83 /* ViewController.swift */; };
@@ -57,6 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B629CB2024043F06004F3DF2 /* TeacherClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherClassViewController.swift; sourceTree = "<group>"; };
+		B629CB2224043F13004F3DF2 /* TeacherGradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherGradeViewController.swift; sourceTree = "<group>"; };
+		B629CB2424043F51004F3DF2 /* Class.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Class.storyboard; sourceTree = "<group>"; };
+		B629CB2624043FA0004F3DF2 /* Grade.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Grade.storyboard; sourceTree = "<group>"; };
 		B683C4F3240276A70083AE83 /* AP Class.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AP Class.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B683C4F6240276A70083AE83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B683C4F8240276A70083AE83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +128,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B629CB1E24043EC7004F3DF2 /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+				B629CB2024043F06004F3DF2 /* TeacherClassViewController.swift */,
+				B629CB2224043F13004F3DF2 /* TeacherGradeViewController.swift */,
+			);
+			path = Teacher;
+			sourceTree = "<group>";
+		};
+		B629CB1F24043ED3004F3DF2 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
 		B683C4EA240276A70083AE83 = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +213,8 @@
 		B683C52824028AAF0083AE83 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B629CB1F24043ED3004F3DF2 /* Student */,
+				B629CB1E24043EC7004F3DF2 /* Teacher */,
 				B683C52D24028C550083AE83 /* LoginViewController.swift */,
 				B683C52F24028C600083AE83 /* SignUpViewController.swift */,
 				B683C53124028C6C0083AE83 /* HomeViewController.swift */,
@@ -238,6 +264,8 @@
 				B683C54C2402E7070083AE83 /* Teacher.storyboard */,
 				B683C5522402F98D0083AE83 /* Course.storyboard */,
 				B683C55A240309AD0083AE83 /* BookShelf.storyboard */,
+				B629CB2424043F51004F3DF2 /* Class.storyboard */,
+				B629CB2624043FA0004F3DF2 /* Grade.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -347,6 +375,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B683C54D2402E7070083AE83 /* Teacher.storyboard in Resources */,
+				B629CB2724043FA0004F3DF2 /* Grade.storyboard in Resources */,
+				B629CB2524043F51004F3DF2 /* Class.storyboard in Resources */,
 				B683C5532402F98D0083AE83 /* Course.storyboard in Resources */,
 				B683C54B2402E6FF0083AE83 /* Student.storyboard in Resources */,
 				B683C503240276AD0083AE83 /* LaunchScreen.storyboard in Resources */,
@@ -384,6 +414,7 @@
 				B683C559240305090083AE83 /* CourseCollectionViewCell.swift in Sources */,
 				B683C4FB240276A70083AE83 /* ViewController.swift in Sources */,
 				B683C4F7240276A70083AE83 /* AppDelegate.swift in Sources */,
+				B629CB2324043F13004F3DF2 /* TeacherGradeViewController.swift in Sources */,
 				B683C55F24030DD20083AE83 /* MoreTableViewCell.swift in Sources */,
 				B683C4F9240276A70083AE83 /* SceneDelegate.swift in Sources */,
 				B683C53524029ABA0083AE83 /* ClassTabBarViewController.swift in Sources */,
@@ -391,6 +422,7 @@
 				B683C53024028C600083AE83 /* SignUpViewController.swift in Sources */,
 				B683C5512402F14B0083AE83 /* MoreViewController.swift in Sources */,
 				B683C55D24030A140083AE83 /* BookShelfViewController.swift in Sources */,
+				B629CB2124043F06004F3DF2 /* TeacherClassViewController.swift in Sources */,
 				B683C5552402F9A30083AE83 /* CourseViewController.swift in Sources */,
 				B683C5412402BACE0083AE83 /* LoginAndSignupViewController.swift in Sources */,
 				B683C53224028C6C0083AE83 /* HomeViewController.swift in Sources */,
