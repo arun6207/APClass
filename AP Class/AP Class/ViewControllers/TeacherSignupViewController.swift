@@ -21,7 +21,6 @@ class TeacherSignupViewController: UIViewController {
     }
     
     @IBAction func goBackButtonClicked(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
         delegate?.dismissSignupContainerView()
     }
     

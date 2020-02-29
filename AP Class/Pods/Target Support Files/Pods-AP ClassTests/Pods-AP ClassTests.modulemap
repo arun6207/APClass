@@ -1,0 +1,6 @@
+framework module Pods_AP_ClassTests {
+  umbrella header "Pods-AP ClassTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

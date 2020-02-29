@@ -59,7 +59,7 @@ class CourseViewController: UIViewController {
     
     private func constrainFloatingButtonToWindow() {
         DispatchQueue.main.async {
-            guard let keyWindow = UIApplication.shared.keyWindow,
+            guard let keyWindow = getKeyWindow(),
                 let floatingButton = self.floatingButton else { return }
             keyWindow.addSubview(floatingButton)
             keyWindow.trailingAnchor.constraint(equalTo: floatingButton.trailingAnchor,
@@ -110,8 +110,6 @@ class CourseViewController: UIViewController {
                     self.courseCollectionView.reloadData()
                 }
             }
-            
-            //fetch data foor this course id
         })
         
         
@@ -128,8 +126,6 @@ extension CourseViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         coursesArray.count
     }
-    
-    // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CourseCollectionViewCell", for: indexPath) as! CourseCollectionViewCell
         cell.courseIdLable.text = coursesArray[indexPath.item]
@@ -139,13 +135,12 @@ extension CourseViewController: UICollectionViewDataSource {
 }
 
 extension CourseViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    private func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let screenWidth = UIScreen.main.bounds.size.width
-        let height: CGFloat = 175.0//UIScreen.main.bounds.size.height
-        if indexPath.row == 0
-        {
-            return CGSize(width: screenWidth/2, height: height)
-        }
-        return CGSize(width: screenWidth/3, height: height);
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let screenWidth = collectionView.bounds.width/3.0 - 3.0
+        let height: CGFloat = 175.0
+        return CGSize(width: screenWidth, height: height);
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets.zero
     }
 }

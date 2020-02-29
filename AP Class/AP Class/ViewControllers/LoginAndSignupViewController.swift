@@ -38,11 +38,9 @@ class LoginAndSignupViewController: UIViewController {
     @IBAction func buttonClicked(button: UIButton) {
         switch button.tag {
         case 0:
-            print("login button clicked")
-            self.performSegue(withIdentifier: "login", sender: self)
+            performSegue(withIdentifier: "login", sender: self)
         case 1:
-            print("create button clicked")
-            self.performSegue(withIdentifier: "signup", sender: self)
+            performSegue(withIdentifier: "signup", sender: self)
         case 2:
             print("forgot passworfd button clicked")
         default:

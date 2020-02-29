@@ -3,14 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62334D01154B7BDB703A31E0 /* Pods_AP_ClassTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72AD7B17586592EB28E8546 /* Pods_AP_ClassTests.framework */; };
+		738C2437D1C7FB5D7E143C6B /* Pods_AP_Class_AP_ClassUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8F425D1469D8787586B75D /* Pods_AP_Class_AP_ClassUITests.framework */; };
 		B629CB2124043F06004F3DF2 /* TeacherClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B629CB2024043F06004F3DF2 /* TeacherClassViewController.swift */; };
 		B629CB2324043F13004F3DF2 /* TeacherGradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B629CB2224043F13004F3DF2 /* TeacherGradeViewController.swift */; };
 		B629CB2524043F51004F3DF2 /* Class.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B629CB2424043F51004F3DF2 /* Class.storyboard */; };
 		B629CB2724043FA0004F3DF2 /* Grade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B629CB2624043FA0004F3DF2 /* Grade.storyboard */; };
+		B683A83424096378004431ED /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683A83324096378004431ED /* ClassViewController.swift */; };
+		B683A83624096685004431ED /* ClassCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683A83524096685004431ED /* ClassCollectionViewCell.swift */; };
+		B683A8382409779E004431ED /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683A8372409779E004431ED /* ColorExtension.swift */; };
+		B683A83A24098BBC004431ED /* GradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683A83924098BBC004431ED /* GradeViewController.swift */; };
+		B683A83C24099649004431ED /* GradePiChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683A83B24099649004431ED /* GradePiChartView.swift */; };
+		B683A83E2409965F004431ED /* GradePiChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B683A83D2409965F004431ED /* GradePiChartView.xib */; };
+		B683A8422409AE31004431ED /* GradeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683A8412409AE31004431ED /* GradeInfoViewController.swift */; };
+		B683A844240A243B004431ED /* GradeInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683A843240A243B004431ED /* GradeInfoTableViewCell.swift */; };
+		B683A846240A2500004431ED /* GradeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683A845240A2500004431ED /* GradeInfo.swift */; };
 		B683C4F7240276A70083AE83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683C4F6240276A70083AE83 /* AppDelegate.swift */; };
 		B683C4F9240276A70083AE83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683C4F8240276A70083AE83 /* SceneDelegate.swift */; };
 		B683C4FB240276A70083AE83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683C4FA240276A70083AE83 /* ViewController.swift */; };
@@ -41,6 +52,7 @@
 		B683C55B240309AD0083AE83 /* BookShelf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B683C55A240309AD0083AE83 /* BookShelf.storyboard */; };
 		B683C55D24030A140083AE83 /* BookShelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683C55C24030A140083AE83 /* BookShelfViewController.swift */; };
 		B683C55F24030DD20083AE83 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683C55E24030DD20083AE83 /* MoreTableViewCell.swift */; };
+		CF0316D28DF3770A6D72EA0A /* Pods_AP_Class.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12B8E697DB31BADBE809965 /* Pods_AP_Class.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +73,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19BEF084E7E119AA5587A809 /* Pods-AP ClassTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AP ClassTests.release.xcconfig"; path = "Target Support Files/Pods-AP ClassTests/Pods-AP ClassTests.release.xcconfig"; sourceTree = "<group>"; };
+		234BA4BA113376A8ED0F1B4C /* Pods-AP ClassTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AP ClassTests.debug.xcconfig"; path = "Target Support Files/Pods-AP ClassTests/Pods-AP ClassTests.debug.xcconfig"; sourceTree = "<group>"; };
+		47A4D1E9966C0293763D5DC2 /* Pods-AP Class.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AP Class.release.xcconfig"; path = "Target Support Files/Pods-AP Class/Pods-AP Class.release.xcconfig"; sourceTree = "<group>"; };
+		60652BB64F87A14878831C5F /* Pods-AP Class-AP ClassUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AP Class-AP ClassUITests.debug.xcconfig"; path = "Target Support Files/Pods-AP Class-AP ClassUITests/Pods-AP Class-AP ClassUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7919919FBDEDB6D5D46826A1 /* Pods-AP Class.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AP Class.debug.xcconfig"; path = "Target Support Files/Pods-AP Class/Pods-AP Class.debug.xcconfig"; sourceTree = "<group>"; };
+		A12B8E697DB31BADBE809965 /* Pods_AP_Class.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AP_Class.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B629CB2024043F06004F3DF2 /* TeacherClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherClassViewController.swift; sourceTree = "<group>"; };
 		B629CB2224043F13004F3DF2 /* TeacherGradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherGradeViewController.swift; sourceTree = "<group>"; };
 		B629CB2424043F51004F3DF2 /* Class.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Class.storyboard; sourceTree = "<group>"; };
 		B629CB2624043FA0004F3DF2 /* Grade.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Grade.storyboard; sourceTree = "<group>"; };
+		B683A83324096378004431ED /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
+		B683A83524096685004431ED /* ClassCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCollectionViewCell.swift; sourceTree = "<group>"; };
+		B683A8372409779E004431ED /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		B683A83924098BBC004431ED /* GradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeViewController.swift; sourceTree = "<group>"; };
+		B683A83B24099649004431ED /* GradePiChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradePiChartView.swift; sourceTree = "<group>"; };
+		B683A83D2409965F004431ED /* GradePiChartView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradePiChartView.xib; sourceTree = "<group>"; };
+		B683A8412409AE31004431ED /* GradeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeInfoViewController.swift; sourceTree = "<group>"; };
+		B683A843240A243B004431ED /* GradeInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeInfoTableViewCell.swift; sourceTree = "<group>"; };
+		B683A845240A2500004431ED /* GradeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeInfo.swift; sourceTree = "<group>"; };
 		B683C4F3240276A70083AE83 /* AP Class.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AP Class.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B683C4F6240276A70083AE83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B683C4F8240276A70083AE83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +128,9 @@
 		B683C55A240309AD0083AE83 /* BookShelf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookShelf.storyboard; sourceTree = "<group>"; };
 		B683C55C24030A140083AE83 /* BookShelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfViewController.swift; sourceTree = "<group>"; };
 		B683C55E24030DD20083AE83 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
+		D72AD7B17586592EB28E8546 /* Pods_AP_ClassTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AP_ClassTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5963360ED3A0C33AE2E2E14 /* Pods-AP Class-AP ClassUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AP Class-AP ClassUITests.release.xcconfig"; path = "Target Support Files/Pods-AP Class-AP ClassUITests/Pods-AP Class-AP ClassUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FE8F425D1469D8787586B75D /* Pods_AP_Class_AP_ClassUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AP_Class_AP_ClassUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0316D28DF3770A6D72EA0A /* Pods_AP_Class.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62334D01154B7BDB703A31E0 /* Pods_AP_ClassTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,17 +154,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				738C2437D1C7FB5D7E143C6B /* Pods_AP_Class_AP_ClassUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FE33D5D1BE84472FA8034D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7919919FBDEDB6D5D46826A1 /* Pods-AP Class.debug.xcconfig */,
+				47A4D1E9966C0293763D5DC2 /* Pods-AP Class.release.xcconfig */,
+				60652BB64F87A14878831C5F /* Pods-AP Class-AP ClassUITests.debug.xcconfig */,
+				E5963360ED3A0C33AE2E2E14 /* Pods-AP Class-AP ClassUITests.release.xcconfig */,
+				234BA4BA113376A8ED0F1B4C /* Pods-AP ClassTests.debug.xcconfig */,
+				19BEF084E7E119AA5587A809 /* Pods-AP ClassTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AB44FE038541373B55E4C638 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A12B8E697DB31BADBE809965 /* Pods_AP_Class.framework */,
+				FE8F425D1469D8787586B75D /* Pods_AP_Class_AP_ClassUITests.framework */,
+				D72AD7B17586592EB28E8546 /* Pods_AP_ClassTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B629CB1E24043EC7004F3DF2 /* Teacher */ = {
 			isa = PBXGroup;
 			children = (
 				B629CB2024043F06004F3DF2 /* TeacherClassViewController.swift */,
 				B629CB2224043F13004F3DF2 /* TeacherGradeViewController.swift */,
+				B683A83324096378004431ED /* ClassViewController.swift */,
+				B683A83924098BBC004431ED /* GradeViewController.swift */,
+				B683A8412409AE31004431ED /* GradeInfoViewController.swift */,
 			);
 			path = Teacher;
 			sourceTree = "<group>";
@@ -151,6 +210,8 @@
 				B683C50C240276AD0083AE83 /* AP ClassTests */,
 				B683C517240276AD0083AE83 /* AP ClassUITests */,
 				B683C4F4240276A70083AE83 /* Products */,
+				5FE33D5D1BE84472FA8034D3 /* Pods */,
+				AB44FE038541373B55E4C638 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -234,6 +295,7 @@
 		B683C52924028AB80083AE83 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B683A845240A2500004431ED /* GradeInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -241,6 +303,7 @@
 		B683C52A24028AC00083AE83 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B683A8372409779E004431ED /* ColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -250,6 +313,10 @@
 			children = (
 				B683C558240305090083AE83 /* CourseCollectionViewCell.swift */,
 				B683C55E24030DD20083AE83 /* MoreTableViewCell.swift */,
+				B683A83524096685004431ED /* ClassCollectionViewCell.swift */,
+				B683A83B24099649004431ED /* GradePiChartView.swift */,
+				B683A83D2409965F004431ED /* GradePiChartView.xib */,
+				B683A843240A243B004431ED /* GradeInfoTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -277,9 +344,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B683C51D240276AD0083AE83 /* Build configuration list for PBXNativeTarget "AP Class" */;
 			buildPhases = (
+				CD69B472D1F24B7B52BF7A45 /* [CP] Check Pods Manifest.lock */,
 				B683C4EF240276A70083AE83 /* Sources */,
 				B683C4F0240276A70083AE83 /* Frameworks */,
 				B683C4F1240276A70083AE83 /* Resources */,
+				7E7D3581799327E8891C6489 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -294,6 +363,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B683C520240276AD0083AE83 /* Build configuration list for PBXNativeTarget "AP ClassTests" */;
 			buildPhases = (
+				1D0D5867E38F7A85958B321A /* [CP] Check Pods Manifest.lock */,
 				B683C505240276AD0083AE83 /* Sources */,
 				B683C506240276AD0083AE83 /* Frameworks */,
 				B683C507240276AD0083AE83 /* Resources */,
@@ -312,9 +382,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B683C523240276AD0083AE83 /* Build configuration list for PBXNativeTarget "AP ClassUITests" */;
 			buildPhases = (
+				F747A1DD6E108FEE778081EF /* [CP] Check Pods Manifest.lock */,
 				B683C510240276AD0083AE83 /* Sources */,
 				B683C511240276AD0083AE83 /* Frameworks */,
 				B683C512240276AD0083AE83 /* Resources */,
+				97BE57F4C9FDDD029EF5230E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -380,6 +452,7 @@
 				B683C5532402F98D0083AE83 /* Course.storyboard in Resources */,
 				B683C54B2402E6FF0083AE83 /* Student.storyboard in Resources */,
 				B683C503240276AD0083AE83 /* LaunchScreen.storyboard in Resources */,
+				B683A83E2409965F004431ED /* GradePiChartView.xib in Resources */,
 				B683C55B240309AD0083AE83 /* BookShelf.storyboard in Resources */,
 				B683C53B24029C690083AE83 /* More.storyboard in Resources */,
 				B683C500240276AD0083AE83 /* Assets.xcassets in Resources */,
@@ -404,6 +477,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D0D5867E38F7A85958B321A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AP ClassTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E7D3581799327E8891C6489 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AP Class/Pods-AP Class-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AP Class/Pods-AP Class-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AP Class/Pods-AP Class-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97BE57F4C9FDDD029EF5230E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AP Class-AP ClassUITests/Pods-AP Class-AP ClassUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AP Class-AP ClassUITests/Pods-AP Class-AP ClassUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AP Class-AP ClassUITests/Pods-AP Class-AP ClassUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD69B472D1F24B7B52BF7A45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AP Class-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F747A1DD6E108FEE778081EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AP Class-AP ClassUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B683C4EF240276A70083AE83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -412,24 +588,32 @@
 				B683C52E24028C550083AE83 /* LoginViewController.swift in Sources */,
 				B683C5472402DC280083AE83 /* StudentSignupViewController.swift in Sources */,
 				B683C559240305090083AE83 /* CourseCollectionViewCell.swift in Sources */,
+				B683A8382409779E004431ED /* ColorExtension.swift in Sources */,
 				B683C4FB240276A70083AE83 /* ViewController.swift in Sources */,
 				B683C4F7240276A70083AE83 /* AppDelegate.swift in Sources */,
 				B629CB2324043F13004F3DF2 /* TeacherGradeViewController.swift in Sources */,
+				B683A846240A2500004431ED /* GradeInfo.swift in Sources */,
 				B683C55F24030DD20083AE83 /* MoreTableViewCell.swift in Sources */,
 				B683C4F9240276A70083AE83 /* SceneDelegate.swift in Sources */,
 				B683C53524029ABA0083AE83 /* ClassTabBarViewController.swift in Sources */,
+				B683A83C24099649004431ED /* GradePiChartView.swift in Sources */,
 				B683C5572402FB450083AE83 /* StudentTabViewController.swift in Sources */,
 				B683C53024028C600083AE83 /* SignUpViewController.swift in Sources */,
+				B683A844240A243B004431ED /* GradeInfoTableViewCell.swift in Sources */,
 				B683C5512402F14B0083AE83 /* MoreViewController.swift in Sources */,
+				B683A83624096685004431ED /* ClassCollectionViewCell.swift in Sources */,
+				B683A8422409AE31004431ED /* GradeInfoViewController.swift in Sources */,
 				B683C55D24030A140083AE83 /* BookShelfViewController.swift in Sources */,
 				B629CB2124043F06004F3DF2 /* TeacherClassViewController.swift in Sources */,
 				B683C5552402F9A30083AE83 /* CourseViewController.swift in Sources */,
 				B683C5412402BACE0083AE83 /* LoginAndSignupViewController.swift in Sources */,
 				B683C53224028C6C0083AE83 /* HomeViewController.swift in Sources */,
+				B683A83A24098BBC004431ED /* GradeViewController.swift in Sources */,
 				B683C5452402CC810083AE83 /* ViewExtensions.swift in Sources */,
 				B683C54F2402F0D10083AE83 /* ProfileViewController.swift in Sources */,
 				B683C5432402C9E60083AE83 /* GlobalFunctions.swift in Sources */,
 				B683C5492402DC3A0083AE83 /* TeacherSignupViewController.swift in Sources */,
+				B683A83424096378004431ED /* ClassViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +784,7 @@
 		};
 		B683C51E240276AD0083AE83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7919919FBDEDB6D5D46826A1 /* Pods-AP Class.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -617,6 +802,7 @@
 		};
 		B683C51F240276AD0083AE83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47A4D1E9966C0293763D5DC2 /* Pods-AP Class.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -634,6 +820,7 @@
 		};
 		B683C521240276AD0083AE83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 234BA4BA113376A8ED0F1B4C /* Pods-AP ClassTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -655,6 +842,7 @@
 		};
 		B683C522240276AD0083AE83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19BEF084E7E119AA5587A809 /* Pods-AP ClassTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -676,6 +864,7 @@
 		};
 		B683C524240276AD0083AE83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60652BB64F87A14878831C5F /* Pods-AP Class-AP ClassUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -695,6 +884,7 @@
 		};
 		B683C525240276AD0083AE83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5963360ED3A0C33AE2E2E14 /* Pods-AP Class-AP ClassUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

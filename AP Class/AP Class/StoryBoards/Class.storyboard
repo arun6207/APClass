@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,21 +26,168 @@
             </objects>
             <point key="canvasLocation" x="-765" y="-171"/>
         </scene>
-        <!--View Controller-->
+        <!--Class View Controller-->
         <scene sceneID="u4V-Q0-K2V">
             <objects>
-                <viewController id="y2w-8P-5zx" sceneMemberID="viewController">
+                <viewController id="y2w-8P-5zx" customClass="ClassViewController" customModule="AP_Class" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8jM-aK-sOk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fM1-Ea-14u">
+                                <rect key="frame" x="5" y="93" width="404" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="20" id="rB3-9q-Xed">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ClassCollectionViewCell" id="y0A-MU-W49" customClass="ClassCollectionViewCell" customModule="AP_Class" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8JW-5h-KM6">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GRADE \n 2/10" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlK-sg-zJF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <color key="backgroundColor" red="0.1137254902" green="0.59215686270000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NlK-sg-zJF" firstAttribute="top" secondItem="8JW-5h-KM6" secondAttribute="top" id="8Rb-kp-has"/>
+                                                <constraint firstAttribute="trailing" secondItem="NlK-sg-zJF" secondAttribute="trailing" id="AeV-FH-zjZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="NlK-sg-zJF" secondAttribute="bottom" id="KBh-uJ-KpM"/>
+                                                <constraint firstItem="NlK-sg-zJF" firstAttribute="leading" secondItem="8JW-5h-KM6" secondAttribute="leading" id="NKD-fr-58f"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="gradeLabel" destination="NlK-sg-zJF" id="6E7-DE-VwZ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fM1-Ea-14u" firstAttribute="top" secondItem="AsT-AC-IU5" secondAttribute="top" constant="5" id="6H7-St-QJs"/>
+                            <constraint firstItem="AsT-AC-IU5" firstAttribute="trailing" secondItem="fM1-Ea-14u" secondAttribute="trailing" constant="5" id="Zxd-Fu-vEm"/>
+                            <constraint firstItem="AsT-AC-IU5" firstAttribute="bottom" secondItem="fM1-Ea-14u" secondAttribute="bottom" constant="5" id="eid-6K-RhT"/>
+                            <constraint firstItem="fM1-Ea-14u" firstAttribute="leading" secondItem="AsT-AC-IU5" secondAttribute="leading" constant="5" id="seT-ab-DVF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AsT-AC-IU5"/>
                     </view>
                     <navigationItem key="navigationItem" id="v4U-3J-ybD"/>
+                    <connections>
+                        <outlet property="classCollectionView" destination="fM1-Ea-14u" id="iFA-7J-Hpq"/>
+                        <segue destination="KoK-FD-mFy" kind="show" identifier="ClassToGradeSegue" id="xXD-eA-00k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kY-hP-qk7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="219" y="-171"/>
+        </scene>
+        <!--Grade View Controller-->
+        <scene sceneID="i75-0L-Z5i">
+            <objects>
+                <viewController id="KoK-FD-mFy" customClass="GradeViewController" customModule="AP_Class" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Abs-Sr-hpu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FwP-uV-PHf">
+                                <rect key="frame" x="30" y="118" width="354" height="665"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izR-eN-6Ji" customClass="GradePiChartView" customModule="AP_Class" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="322.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pih-VD-MWH" customClass="GradePiChartView" customModule="AP_Class" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="342.5" width="354" height="322.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1137254902" green="0.59215686270000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FwP-uV-PHf" firstAttribute="leading" secondItem="oSA-Qd-xwk" secondAttribute="leading" constant="30" id="63m-wi-4sv"/>
+                            <constraint firstItem="oSA-Qd-xwk" firstAttribute="trailing" secondItem="FwP-uV-PHf" secondAttribute="trailing" constant="30" id="F3i-8F-cUi"/>
+                            <constraint firstItem="oSA-Qd-xwk" firstAttribute="bottom" secondItem="FwP-uV-PHf" secondAttribute="bottom" constant="30" id="YhY-Bo-vIn"/>
+                            <constraint firstItem="FwP-uV-PHf" firstAttribute="top" secondItem="oSA-Qd-xwk" secondAttribute="top" constant="30" id="zKo-ha-3mg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oSA-Qd-xwk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zER-2R-BPP"/>
+                    <connections>
+                        <outlet property="classWorkPieChart" destination="Pih-VD-MWH" id="aON-rY-T18"/>
+                        <outlet property="homePieChart" destination="izR-eN-6Ji" id="MPO-H2-pOf"/>
+                        <segue destination="eFX-Zq-m4T" kind="show" identifier="GradeChartToInfo" id="q9u-rv-FZg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IZV-na-G8W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="-333"/>
+        </scene>
+        <!--Grade Info View Controller-->
+        <scene sceneID="8T2-gW-qOk">
+            <objects>
+                <viewController id="eFX-Zq-m4T" customClass="GradeInfoViewController" customModule="AP_Class" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="As7-LW-r01">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y3g-sw-lTW">
+                                <rect key="frame" x="20" y="340" width="374" height="429"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GradeInfoTableViewCell" rowHeight="92" id="wvl-CI-MF6" customClass="GradeInfoTableViewCell" customModule="AP_Class" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wvl-CI-MF6" id="Rza-jw-mTR">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="92"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30Q-LH-Yg3">
+                                                    <rect key="frame" x="67" y="71" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fK5-jp-AXq" customClass="GradePiChartView" customModule="AP_Class" customModuleProvider="target">
+                                <rect key="frame" x="20" y="108" width="374" height="224"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1137254902" green="0.59215686270000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="rek-ce-hMf" firstAttribute="trailing" secondItem="y3g-sw-lTW" secondAttribute="trailing" constant="20" id="1zI-tE-4Xx"/>
+                            <constraint firstItem="fK5-jp-AXq" firstAttribute="height" secondItem="As7-LW-r01" secondAttribute="height" multiplier="0.25" id="7v5-w3-AiR"/>
+                            <constraint firstItem="fK5-jp-AXq" firstAttribute="top" secondItem="rek-ce-hMf" secondAttribute="top" constant="20" id="ASj-6O-uBU"/>
+                            <constraint firstItem="rek-ce-hMf" firstAttribute="trailing" secondItem="fK5-jp-AXq" secondAttribute="trailing" constant="20" id="BDr-sr-oqS"/>
+                            <constraint firstItem="y3g-sw-lTW" firstAttribute="top" secondItem="fK5-jp-AXq" secondAttribute="bottom" constant="8" id="JzW-1Q-7dg"/>
+                            <constraint firstItem="fK5-jp-AXq" firstAttribute="leading" secondItem="rek-ce-hMf" secondAttribute="leading" constant="20" id="Vku-c3-SgL"/>
+                            <constraint firstItem="y3g-sw-lTW" firstAttribute="leading" secondItem="rek-ce-hMf" secondAttribute="leading" constant="20" id="XX6-iF-3g7"/>
+                            <constraint firstItem="y3g-sw-lTW" firstAttribute="bottom" secondItem="rek-ce-hMf" secondAttribute="bottom" constant="-44" id="o0F-5h-mD2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rek-ce-hMf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="en1-xc-Qj3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GRh-UB-iOo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2362.3188405797105" y="-534.375"/>
         </scene>
     </scenes>
     <resources>
