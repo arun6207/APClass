@@ -9,10 +9,7 @@
 import Foundation
 import UIKit
 
-let lightBlue = UIColor(red: 151/255.0, green: 201/255.0, blue: 245/255.0, alpha: 1.0)
-let midLightBlue = UIColor(red: 113/255.0, green: 161/255.0, blue: 247/255.0, alpha: 1.0)
-let midDarkBlue = UIColor(red: 79/255.0, green: 138/255.0, blue: 240/255.0, alpha: 1.0)
-let darkBlue = UIColor(red: 65/255.0, green: 102/255.0, blue: 236/255.0, alpha: 1.0)
+let gradeValues = ["90-100","70-80","50-60","below 50"]
 func instantiateViewController<T>(named viewControllerName: String, fromStoryboard storyboardName: String, withType: T.Type) -> T? {
     return UIStoryboard(
         name: storyboardName,

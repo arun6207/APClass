@@ -16,7 +16,6 @@ class MoreViewController: UIViewController {
         super.viewDidLoad()
         title = "More"
         moreTableView.tableFooterView = UIView()
-        moreTableView.allowsSelection = false
         // Do any additional setup after loading the view.
     }
     
@@ -43,6 +42,7 @@ extension MoreViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MoreTableViewCell", for: indexPath) as! MoreTableViewCell
         cell.descriptionLable.text = moreOptions[indexPath.row]
         cell.accessoryType = .disclosureIndicator
+        cell.selectionStyle = .none
         return cell
     }
     
@@ -50,4 +50,9 @@ extension MoreViewController: UITableViewDataSource, UITableViewDelegate {
         return 50.0
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if moreOptions[indexPath.row] == "Logout" {
+            initiateStoryBoard(name: "Main")
+        }
+    }
 }

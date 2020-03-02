@@ -10,10 +10,11 @@ import UIKit
 import Charts
 
 class GradeViewController: UIViewController {
-
-    var gradeValues = ["90-100","70-80","50-60","below 50"]
     @IBOutlet weak var classWorkPieChart: GradePiChartView!
     @IBOutlet weak var homePieChart: GradePiChartView!
+    var classWorkValues: [Double] = [16,5,4,9]
+    var homeWorkValues: [Double] = [10,6,5,10]
+    var selectedValues: [Double]?
     var selectedTag: Int = 0 
     var gradeValue: String!
     
@@ -26,23 +27,33 @@ class GradeViewController: UIViewController {
     
     func setUphomeWorkPieChart() {
         homePieChart.titleLabel.text = "HOME WORK"
-        homePieChart.setDataCount(values: [10,6,5,10])
+        homePieChart.setDataCount(values: homeWorkValues)
         homePieChart.piechartView.tag = 1
         homePieChart.delegate = self
     }
     
     func setUpClassWorkPieChart() {
         classWorkPieChart.titleLabel.text = "CLASS WORK"
-        classWorkPieChart.setDataCount(values: [16,5,4,9])
+        classWorkPieChart.setDataCount(values: classWorkValues)
         classWorkPieChart.piechartView.tag = 2
         classWorkPieChart.delegate = self
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GradeChartToInfo" {
+            if let vc = segue.destination as? GradeInfoViewController,
+                let values = selectedValues {
+                vc.slectedPieChartData = values
+            }
+        }
     }
 }
 
 extension GradeViewController: GradePiChartViewDelegate {
-    func gradePieChartClicked(sender: AnyObject? ,_ values: [String]) {
+    func gradePieChartClicked(sender: AnyObject? ,_ values: [Double]) {
         if let tag = sender?.view.tag {
             selectedTag = tag
+            selectedValues = values
             performSegue(withIdentifier: "GradeChartToInfo", sender: self)
         }
     }

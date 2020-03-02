@@ -10,16 +10,16 @@ import UIKit
 import Charts
 
 protocol GradePiChartViewDelegate: AnyObject {
-    func gradePieChartClicked(sender: AnyObject? ,_ values: [String])
+    func gradePieChartClicked(sender: AnyObject? ,_ values: [Double])
 }
 
 class GradePiChartView: UIView {
     
     @IBOutlet weak var piechartView: PieChartView!
     @IBOutlet weak var titleLabel: UILabel!
-    let gradeValues = ["90-100","70-80","50-60","below 50"]
     let nibName = "GradePiChartView"
     var view : UIView!
+    var pieChartData: [Double]?
     weak var delegate: GradePiChartViewDelegate?
 
     required init?(coder aDecoder: NSCoder) {
@@ -54,7 +54,9 @@ class GradePiChartView: UIView {
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
-        delegate?.gradePieChartClicked(sender: sender, gradeValues)
+        if let values = pieChartData {
+            delegate?.gradePieChartClicked(sender: sender, values)
+        }
     }
     
     func setUpChartView() {
@@ -88,6 +90,7 @@ class GradePiChartView: UIView {
                        PieChartDataEntry(value: values[1], label: gradeValues[1]),
                        PieChartDataEntry(value: values[2], label: gradeValues[2]),
                        PieChartDataEntry(value: values[3], label: gradeValues[3])]
+        pieChartData = values
         
         
         let set = PieChartDataSet(entries: entries, label: "")

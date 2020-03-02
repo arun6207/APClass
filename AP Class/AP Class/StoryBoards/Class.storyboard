@@ -143,7 +143,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y3g-sw-lTW">
-                                <rect key="frame" x="20" y="340" width="374" height="429"/>
+                                <rect key="frame" x="20" y="466" width="374" height="303"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GradeInfoTableViewCell" rowHeight="92" id="wvl-CI-MF6" customClass="GradeInfoTableViewCell" customModule="AP_Class" customModuleProvider="target">
@@ -166,14 +166,16 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fK5-jp-AXq" customClass="GradePiChartView" customModule="AP_Class" customModuleProvider="target">
-                                <rect key="frame" x="20" y="108" width="374" height="224"/>
+                                <rect key="frame" x="20" y="108" width="374" height="350"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="rL7-bd-JOY"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.1137254902" green="0.59215686270000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="rek-ce-hMf" firstAttribute="trailing" secondItem="y3g-sw-lTW" secondAttribute="trailing" constant="20" id="1zI-tE-4Xx"/>
-                            <constraint firstItem="fK5-jp-AXq" firstAttribute="height" secondItem="As7-LW-r01" secondAttribute="height" multiplier="0.25" id="7v5-w3-AiR"/>
                             <constraint firstItem="fK5-jp-AXq" firstAttribute="top" secondItem="rek-ce-hMf" secondAttribute="top" constant="20" id="ASj-6O-uBU"/>
                             <constraint firstItem="rek-ce-hMf" firstAttribute="trailing" secondItem="fK5-jp-AXq" secondAttribute="trailing" constant="20" id="BDr-sr-oqS"/>
                             <constraint firstItem="y3g-sw-lTW" firstAttribute="top" secondItem="fK5-jp-AXq" secondAttribute="bottom" constant="8" id="JzW-1Q-7dg"/>
@@ -184,6 +186,10 @@
                         <viewLayoutGuide key="safeArea" id="rek-ce-hMf"/>
                     </view>
                     <navigationItem key="navigationItem" id="en1-xc-Qj3"/>
+                    <connections>
+                        <outlet property="gradeInfoPieChart" destination="fK5-jp-AXq" id="1TZ-cd-6w2"/>
+                        <outlet property="gradeInfoTableView" destination="y3g-sw-lTW" id="zeS-fL-n8o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GRh-UB-iOo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

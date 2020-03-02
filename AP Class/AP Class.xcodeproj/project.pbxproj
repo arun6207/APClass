@@ -52,6 +52,8 @@
 		B683C55B240309AD0083AE83 /* BookShelf.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B683C55A240309AD0083AE83 /* BookShelf.storyboard */; };
 		B683C55D24030A140083AE83 /* BookShelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683C55C24030A140083AE83 /* BookShelfViewController.swift */; };
 		B683C55F24030DD20083AE83 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683C55E24030DD20083AE83 /* MoreTableViewCell.swift */; };
+		B6A71933240D814100E207C6 /* GradeInfoTableSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A71932240D814100E207C6 /* GradeInfoTableSectionHeader.swift */; };
+		B6A71935240D815100E207C6 /* GradeInfoTableSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A71934240D815100E207C6 /* GradeInfoTableSectionHeader.xib */; };
 		CF0316D28DF3770A6D72EA0A /* Pods_AP_Class.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12B8E697DB31BADBE809965 /* Pods_AP_Class.framework */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +130,8 @@
 		B683C55A240309AD0083AE83 /* BookShelf.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookShelf.storyboard; sourceTree = "<group>"; };
 		B683C55C24030A140083AE83 /* BookShelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfViewController.swift; sourceTree = "<group>"; };
 		B683C55E24030DD20083AE83 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
+		B6A71932240D814100E207C6 /* GradeInfoTableSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeInfoTableSectionHeader.swift; sourceTree = "<group>"; };
+		B6A71934240D815100E207C6 /* GradeInfoTableSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradeInfoTableSectionHeader.xib; sourceTree = "<group>"; };
 		D72AD7B17586592EB28E8546 /* Pods_AP_ClassTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AP_ClassTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5963360ED3A0C33AE2E2E14 /* Pods-AP Class-AP ClassUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AP Class-AP ClassUITests.release.xcconfig"; path = "Target Support Files/Pods-AP Class-AP ClassUITests/Pods-AP Class-AP ClassUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FE8F425D1469D8787586B75D /* Pods_AP_Class_AP_ClassUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AP_Class_AP_ClassUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -317,6 +321,8 @@
 				B683A83B24099649004431ED /* GradePiChartView.swift */,
 				B683A83D2409965F004431ED /* GradePiChartView.xib */,
 				B683A843240A243B004431ED /* GradeInfoTableViewCell.swift */,
+				B6A71932240D814100E207C6 /* GradeInfoTableSectionHeader.swift */,
+				B6A71934240D815100E207C6 /* GradeInfoTableSectionHeader.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -453,6 +459,7 @@
 				B683C54B2402E6FF0083AE83 /* Student.storyboard in Resources */,
 				B683C503240276AD0083AE83 /* LaunchScreen.storyboard in Resources */,
 				B683A83E2409965F004431ED /* GradePiChartView.xib in Resources */,
+				B6A71935240D815100E207C6 /* GradeInfoTableSectionHeader.xib in Resources */,
 				B683C55B240309AD0083AE83 /* BookShelf.storyboard in Resources */,
 				B683C53B24029C690083AE83 /* More.storyboard in Resources */,
 				B683C500240276AD0083AE83 /* Assets.xcassets in Resources */,
@@ -586,6 +593,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B683C52E24028C550083AE83 /* LoginViewController.swift in Sources */,
+				B6A71933240D814100E207C6 /* GradeInfoTableSectionHeader.swift in Sources */,
 				B683C5472402DC280083AE83 /* StudentSignupViewController.swift in Sources */,
 				B683C559240305090083AE83 /* CourseCollectionViewCell.swift in Sources */,
 				B683A8382409779E004431ED /* ColorExtension.swift in Sources */,
