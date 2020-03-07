@@ -1,0 +1,131 @@
+
+[
+  {
+    "gradeID": 1,
+    "gradeName": "90-100",
+    "isCollapsed": false,
+    "students": [
+      {
+        "name": "student name 1",
+        "id": 163060901,
+        "marks": 100
+      },
+      {
+        "name": "student name 2",
+        "id": 163060902,
+        "marks": 96
+      },
+      {
+        "name": "student name 3",
+        "id": 163060924,
+        "marks": 94
+      },
+      {
+        "name": "student name 4",
+        "id": 167060901,
+        "marks": 92
+      },
+      {
+        "name": "student name 5",
+        "id": 163060802,
+        "marks": 91
+      }
+    ]
+  },
+  {
+    "gradeID": 2,
+    "gradeName": "70-90",
+    "isCollapsed": false,
+    "students": [
+      {
+        "name": "student name 1",
+        "id": 163080901,
+        "marks": 89
+      },
+      {
+        "name": "student name 2",
+        "id": 163080922,
+        "marks": 86
+      },
+      {
+        "name": "student name 3",
+        "id": 163080923,
+        "marks": 84
+      },
+      {
+        "name": "student name 4",
+        "id": 163080924,
+        "marks": 80
+      },
+      {
+        "name": "student name 5",
+        "id": 163080927,
+        "marks": 75
+      }
+    ]
+  },
+  {
+    "gradeID": 3,
+    "gradeName": "50-60",
+    "isCollapsed": false,
+    "students": [
+      {
+        "name": "student name 1",
+        "id": 163080978,
+        "marks": 59
+      },
+      {
+        "name": "student name 2",
+        "id": 163080954,
+        "marks": 56
+      },
+      {
+        "name": "student name 3",
+        "id": 163080955,
+        "marks": 54
+      },
+      {
+        "name": "student name 4",
+        "id": 163080965,
+        "marks": 53
+      },
+      {
+        "name": "student name 5",
+        "id": 163080968,
+        "marks": 52
+      }
+    ]
+  },
+  {
+    "gradeID": 4,
+    "gradeName": "Below 50",
+    "isCollapsed": false,
+    "students": [
+      {
+        "name": "student name 1",
+        "id": 163080895,
+        "marks": 48
+      },
+      {
+        "name": "student name 2",
+        "id": 1630808885,
+        "marks": 43
+      },
+      {
+        "name": "student name 3",
+        "id": 163080910,
+        "marks": 42
+      },
+      {
+        "name": "student name 4",
+        "id": 163080945,
+        "marks": 40
+      },
+      {
+        "name": "student name 5",
+        "id": 163080974,
+        "marks": 35
+      }
+    ]
+  }
+]

@@ -13,6 +13,7 @@ class GradeInfoViewController: UIViewController {
     var slectedPieChartData: [Double]!
     @IBOutlet weak var gradeInfoPieChart: GradePiChartView!
     @IBOutlet weak var gradeInfoTableView: UITableView!
+    var gradeinfo = APClassMockData.shared.gardeInforamtionArray
     override func viewDidLoad() {
         super.viewDidLoad()
         gradeInfoTableView.dataSource = self
@@ -30,13 +31,13 @@ class GradeInfoViewController: UIViewController {
 
 extension GradeInfoViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        gradeValues.count
+        gradeinfo.count
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        gradeValues[section]
+        gradeinfo[section].gradeName
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+       return gradeinfo[section].isCollapsed ? gradeinfo[section].students.count : 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard
@@ -44,14 +45,38 @@ extension GradeInfoViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         cell.textLabel?.textColor = UIColor.black
-        cell.textLabel?.text = "Student\(indexPath.row)"
+        cell.textLabel?.text = gradeinfo[indexPath.section].students[indexPath.row].name
         return cell
     }
+    
 }
 
 extension GradeInfoViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-          70.0
-      }
+        44.0
+    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
+        
+        header.titleLabel.text = gradeValues[section]
+        header.arrowLabel.text = ">"
+        header.setCollapsed(gradeinfo[section].isCollapsed)
+        
+        header.section = section
+        header.delegate = self
+        
+        return header
+    }
+}
+
+extension GradeInfoViewController: CollapsibleTableViewHeaderDelegate {
+    func toggleSection(_ header: CollapsibleTableViewHeader, section: Int) {
+        let collapsed = !gradeinfo[section].isCollapsed
+        // Toggle collapse
+        gradeinfo[section].isCollapsed = collapsed
+        header.setCollapsed(collapsed)
+        
+        gradeInfoTableView.reloadSections(NSIndexSet(index: section) as IndexSet, with: .automatic)
+    }
 }
 

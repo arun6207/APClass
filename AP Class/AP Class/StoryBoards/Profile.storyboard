@@ -32,14 +32,39 @@
                     <view key="view" contentMode="scaleToFill" id="uAS-ex-m83">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NV9-wV-pLl">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfilePicTableViewCell" rowHeight="114" id="h1G-lj-MCo" customClass="ProfilePicTableViewCell" customModule="AP_Class" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="114"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h1G-lj-MCo" id="MIa-2b-CRc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="114"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="k7w-3c-Ms4" firstAttribute="trailing" secondItem="NV9-wV-pLl" secondAttribute="trailing" id="6Bm-Bk-AbM"/>
+                            <constraint firstItem="NV9-wV-pLl" firstAttribute="leading" secondItem="k7w-3c-Ms4" secondAttribute="leading" id="IES-rp-o9v"/>
+                            <constraint firstItem="NV9-wV-pLl" firstAttribute="top" secondItem="k7w-3c-Ms4" secondAttribute="top" id="OuN-Zp-V2i"/>
+                            <constraint firstItem="k7w-3c-Ms4" firstAttribute="bottom" secondItem="NV9-wV-pLl" secondAttribute="bottom" id="TOE-SO-JBF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="k7w-3c-Ms4"/>
                     </view>
                     <navigationItem key="navigationItem" id="UFI-Aj-rEp"/>
+                    <connections>
+                        <outlet property="profileTableView" destination="NV9-wV-pLl" id="qcN-mp-qSH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZ6-6s-AA5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-98" y="53"/>
+            <point key="canvasLocation" x="-98.550724637681171" y="52.901785714285715"/>
         </scene>
     </scenes>
     <resources>

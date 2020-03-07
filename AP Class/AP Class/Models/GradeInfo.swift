@@ -8,24 +8,22 @@
 
 import Foundation
 
-struct Section {
-  var name: String
-  var items: [Item]
-  var collapsed: Bool
-    
-  init(name: String, items: [Item], collapsed: Bool = false) {
-    self.name = name
-    self.items = items
-    self.collapsed = collapsed
-  }
+// MARK: - GradeInformationElement
+struct GradeInformationElement: Codable {
+    let gradeID: Int
+    let gradeName: String
+    var isCollapsed: Bool
+    let students: [Student]
 }
-    
-public struct Item {
-    var name: String
-    var detail: String
-    
-    public init(name: String, detail: String) {
-        self.name = name
-        self.detail = detail
-    }
+
+// MARK: - Student
+struct Student: Codable {
+    let name: String
+    let id, marks: Int
 }
+
+typealias GradeInformation = [GradeInformationElement]
+ 
+
+
+

@@ -10,22 +10,27 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var profileTableView: UITableView!
+    let studentTitles = ["Username", "Email", "Contact Number", "Student ID"]
+    let teacherTitles = ["Full Name","Username", "Email", "Contact Number", "Teacher ID"]
+    let teacherValues = ["Sample Name","tsample", "tsample@abc.com", "+971501234567", "5213123"]
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Profile"
+        profileTableView.dataSource = self
+    }
 
-        // Do any additional setup after loading the view.
+}
+extension ProfileViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        teacherTitles.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .value1, reuseIdentifier: "Cell")
+        cell.textLabel?.text = teacherTitles[indexPath.row]
+        cell.detailTextLabel?.text = teacherValues[indexPath.row]
+        return cell
     }
-    */
-
+    
 }

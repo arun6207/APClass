@@ -36,8 +36,10 @@ class LoginViewController: UIViewController {
         if username.count > 2 && password.count > 2 {
             if username.prefix(1).uppercased() == "t".uppercased() {
                 initiateStoryBoard(name: "Teacher")
+                APClassMockData.shared.isStudentLogin = false
             } else {
                 initiateStoryBoard(name: "Student")
+                APClassMockData.shared.isStudentLogin = true
             }
           
         } else {

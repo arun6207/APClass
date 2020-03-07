@@ -100,26 +100,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FwP-uV-PHf">
-                                <rect key="frame" x="30" y="118" width="354" height="665"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc8-Hh-Myy">
+                                <rect key="frame" x="10" y="108" width="394" height="677"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="izR-eN-6Ji" customClass="GradePiChartView" customModule="AP_Class" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="322.5"/>
+                                        <rect key="frame" x="20" y="20" width="354" height="322.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="322.5" id="qx0-2J-6Aa"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pih-VD-MWH" customClass="GradePiChartView" customModule="AP_Class" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="342.5" width="354" height="322.5"/>
+                                        <rect key="frame" x="20" y="354" width="354" height="322.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="322.5" id="CUC-72-DH9"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstItem="Pih-VD-MWH" firstAttribute="top" secondItem="izR-eN-6Ji" secondAttribute="bottom" constant="11.5" id="Ien-Y7-93J"/>
+                                    <constraint firstItem="Pih-VD-MWH" firstAttribute="leading" secondItem="EjX-LL-Bg1" secondAttribute="leading" constant="20" id="LBN-fi-Iz7"/>
+                                    <constraint firstItem="izR-eN-6Ji" firstAttribute="leading" secondItem="EjX-LL-Bg1" secondAttribute="leading" constant="20" id="Psc-Bm-jAu"/>
+                                    <constraint firstItem="Pih-VD-MWH" firstAttribute="trailing" secondItem="izR-eN-6Ji" secondAttribute="trailing" id="T9O-VM-ola"/>
+                                    <constraint firstAttribute="trailing" secondItem="izR-eN-6Ji" secondAttribute="trailing" constant="20" id="g8e-0p-8Br"/>
+                                    <constraint firstItem="izR-eN-6Ji" firstAttribute="top" secondItem="09o-H9-lac" secondAttribute="top" constant="20" id="jyb-FD-hEd"/>
+                                    <constraint firstAttribute="bottom" secondItem="Pih-VD-MWH" secondAttribute="bottom" constant="0.5" id="nK4-Vo-4J7"/>
+                                    <constraint firstItem="EjX-LL-Bg1" firstAttribute="trailing" secondItem="izR-eN-6Ji" secondAttribute="trailing" constant="20" id="wwk-kp-FC6"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="09o-H9-lac"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="EjX-LL-Bg1"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.1137254902" green="0.59215686270000001" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="FwP-uV-PHf" firstAttribute="leading" secondItem="oSA-Qd-xwk" secondAttribute="leading" constant="30" id="63m-wi-4sv"/>
-                            <constraint firstItem="oSA-Qd-xwk" firstAttribute="trailing" secondItem="FwP-uV-PHf" secondAttribute="trailing" constant="30" id="F3i-8F-cUi"/>
-                            <constraint firstItem="oSA-Qd-xwk" firstAttribute="bottom" secondItem="FwP-uV-PHf" secondAttribute="bottom" constant="30" id="YhY-Bo-vIn"/>
-                            <constraint firstItem="FwP-uV-PHf" firstAttribute="top" secondItem="oSA-Qd-xwk" secondAttribute="top" constant="30" id="zKo-ha-3mg"/>
+                            <constraint firstItem="fc8-Hh-Myy" firstAttribute="centerX" secondItem="Abs-Sr-hpu" secondAttribute="centerX" id="H3P-eW-fOv"/>
+                            <constraint firstItem="oSA-Qd-xwk" firstAttribute="bottom" secondItem="fc8-Hh-Myy" secondAttribute="bottom" constant="28" id="Otq-Cc-ooC"/>
+                            <constraint firstItem="fc8-Hh-Myy" firstAttribute="top" secondItem="oSA-Qd-xwk" secondAttribute="top" constant="20" id="bMH-wL-fY3"/>
+                            <constraint firstItem="fc8-Hh-Myy" firstAttribute="leading" secondItem="oSA-Qd-xwk" secondAttribute="leading" constant="10" id="xww-ou-eL8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oSA-Qd-xwk"/>
                     </view>
@@ -132,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IZV-na-G8W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="-333"/>
+            <point key="canvasLocation" x="1053.6231884057972" y="-333.48214285714283"/>
         </scene>
         <!--Grade Info View Controller-->
         <scene sceneID="8T2-gW-qOk">
