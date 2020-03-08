@@ -220,7 +220,7 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7P8-3p-Lhj">
-                                <rect key="frame" x="30" y="133" width="354" height="675"/>
+                                <rect key="frame" x="20" y="133" width="374" height="675"/>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.36470588235294116" green="0.70588235294117641" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
@@ -232,8 +232,8 @@
                             <constraint firstItem="lW0-fd-cZX" firstAttribute="trailing" secondItem="4tt-gc-wun" secondAttribute="trailing" constant="30" id="Zqc-dS-Rkl"/>
                             <constraint firstItem="ntl-BC-gY9" firstAttribute="top" secondItem="lW0-fd-cZX" secondAttribute="top" constant="50" id="gbN-Ny-WTz"/>
                             <constraint firstItem="4tt-gc-wun" firstAttribute="leading" secondItem="lW0-fd-cZX" secondAttribute="leading" constant="30" id="k8q-yh-cPe"/>
-                            <constraint firstItem="lW0-fd-cZX" firstAttribute="trailing" secondItem="7P8-3p-Lhj" secondAttribute="trailing" constant="30" id="mfW-QH-hcx"/>
-                            <constraint firstItem="7P8-3p-Lhj" firstAttribute="leading" secondItem="lW0-fd-cZX" secondAttribute="leading" constant="30" id="ptE-G0-A64"/>
+                            <constraint firstItem="lW0-fd-cZX" firstAttribute="trailing" secondItem="7P8-3p-Lhj" secondAttribute="trailing" constant="20" id="mfW-QH-hcx"/>
+                            <constraint firstItem="7P8-3p-Lhj" firstAttribute="leading" secondItem="lW0-fd-cZX" secondAttribute="leading" constant="20" id="ptE-G0-A64"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lW0-fd-cZX"/>
                     </view>
@@ -357,7 +357,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fMP-9q-mke">
                                 <rect key="frame" x="20" y="64" width="374" height="390"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="ENTER USERNAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aZA-JQ-mHK">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER USERNAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aZA-JQ-mHK">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="2eQ-GW-mMW"/>
@@ -365,7 +365,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="ENTER PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ERh-qW-lyF">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ERh-qW-lyF">
                                         <rect key="frame" x="0.0" y="50" width="374" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="FNJ-La-zQO"/>
@@ -373,7 +373,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="RE-ENTER PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JFV-Cd-6hY">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="RE-ENTER PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JFV-Cd-6hY">
                                         <rect key="frame" x="0.0" y="100" width="374" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="m9R-hJ-d24"/>
@@ -381,7 +381,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="ENTER EMAIL ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Dp-jw-poC">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER EMAIL ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Dp-jw-poC">
                                         <rect key="frame" x="0.0" y="150" width="374" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="nJw-o1-KVB"/>
@@ -389,7 +389,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="ENTER SCHOOL NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a55-XS-pNJ">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER SCHOOL NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a55-XS-pNJ">
                                         <rect key="frame" x="0.0" y="200" width="374" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="MiN-tJ-Jgp"/>
@@ -397,7 +397,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="ENTER CLASS NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kn4-w0-nCd">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER CLASS NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kn4-w0-nCd">
                                         <rect key="frame" x="0.0" y="250" width="374" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="8tm-xF-i6C"/>
@@ -405,7 +405,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="ENTER SPECIALIZED SUBJECTS" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="90x-I3-d2E">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER SPECIALIZED SUBJECTS" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="90x-I3-d2E">
                                         <rect key="frame" x="0.0" y="300" width="374" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="MCB-5o-u1b"/>
@@ -413,7 +413,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="ENTER SCHOOL NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UMg-qb-WxS">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER SCHOOL NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UMg-qb-WxS">
                                         <rect key="frame" x="0.0" y="350" width="374" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="ytC-Gy-bUW"/>
@@ -422,6 +422,11 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87B-6A-XUn">
                                 <rect key="frame" x="20" y="464" width="374" height="40"/>

@@ -16,7 +16,7 @@ func instantiateViewController<T>(named viewControllerName: String, fromStoryboa
         bundle: Bundle.main).instantiateViewController(withIdentifier: viewControllerName) as? T
 }
 
-func showErrorAlert(message: String, viewController: UIViewController) {
+func showAlert(message: String, viewController: UIViewController) {
     let alertController = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
     let okAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
     

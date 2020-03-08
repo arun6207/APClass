@@ -82,8 +82,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AsT-AC-IU5"/>
                     </view>
-                    <navigationItem key="navigationItem" id="v4U-3J-ybD"/>
+                    <navigationItem key="navigationItem" id="v4U-3J-ybD">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="08O-Nk-ADR">
+                            <connections>
+                                <action selector="generateCourseID:" destination="y2w-8P-5zx" id="eiP-i4-G0i"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="addBarButtonItem" destination="08O-Nk-ADR" id="Rvj-yq-7Gr"/>
                         <outlet property="classCollectionView" destination="fM1-Ea-14u" id="iFA-7J-Hpq"/>
                         <segue destination="KoK-FD-mFy" kind="show" identifier="ClassToGradeSegue" id="xXD-eA-00k"/>
                     </connections>

@@ -43,7 +43,7 @@ class LoginViewController: UIViewController {
             }
           
         } else {
-            showErrorAlert(message: "Enter valid username and password", viewController: self)
+            showAlert(message: "Enter valid username and password", viewController: self)
         }
     }
    

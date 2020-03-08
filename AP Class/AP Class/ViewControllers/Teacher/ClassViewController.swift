@@ -10,6 +10,7 @@ import UIKit
 
 class ClassViewController: UIViewController {
 
+    @IBOutlet weak var addBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var classCollectionView: UICollectionView!
     let validColors = [UIColor.apLightBlue, UIColor.apMidLightBlue,UIColor.apMidDarkBlue, UIColor.apDarkBlue]
     let gradesArray = ["12/53", "10/52", "9/53", "14/54", "10/55", "8/50", "12/53", "15/55", "10/51", "9/53", "10/53", "9/52", "9/53", "6/51"]
@@ -23,6 +24,10 @@ class ClassViewController: UIViewController {
         classCollectionView.automaticallyAdjustsScrollIndicatorInsets = false
     }
 
+    @IBAction func generateCourseID(_ sender: Any) {
+        let randomInt = Int.random(in: 10001..<49999)
+        showAlert(message: "Course ID: \(randomInt)", viewController: self)
+    }
 }
 extension ClassViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
