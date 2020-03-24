@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-AP Class-AP ClassUITests/Pods-AP Class-AP ClassUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
+${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework

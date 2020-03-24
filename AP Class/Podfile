@@ -7,6 +7,7 @@ target 'AP Class' do
 
   # Pods for AP Class
   pod 'Charts'
+  pod 'TextFieldEffects'
   target 'AP ClassTests' do
     inherit! :search_paths
     # Pods for testing

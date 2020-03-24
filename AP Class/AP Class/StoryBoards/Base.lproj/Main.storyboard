@@ -134,7 +134,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kaK-GW-DQf">
                                 <rect key="frame" x="30" y="100" width="354" height="200"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="tsample" borderStyle="roundedRect" placeholder="Enter username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cUY-z6-lUB">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="sample" borderStyle="roundedRect" placeholder="Enter username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cUY-z6-lUB">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="46.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -355,68 +355,68 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fMP-9q-mke">
-                                <rect key="frame" x="20" y="64" width="374" height="390"/>
+                                <rect key="frame" x="20" y="64" width="374" height="510"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER USERNAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aZA-JQ-mHK">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ENTER USERNAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aZA-JQ-mHK" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="2eQ-GW-mMW"/>
+                                            <constraint firstAttribute="height" constant="55" id="2eQ-GW-mMW"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ERh-qW-lyF">
-                                        <rect key="frame" x="0.0" y="50" width="374" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ENTER PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ERh-qW-lyF" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="65" width="374" height="55"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="FNJ-La-zQO"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="RE-ENTER PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JFV-Cd-6hY">
-                                        <rect key="frame" x="0.0" y="100" width="374" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="m9R-hJ-d24"/>
+                                            <constraint firstAttribute="height" constant="55" id="FNJ-La-zQO"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER EMAIL ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Dp-jw-poC">
-                                        <rect key="frame" x="0.0" y="150" width="374" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="RE-ENTER PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JFV-Cd-6hY" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="130" width="374" height="55"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="nJw-o1-KVB"/>
+                                            <constraint firstAttribute="height" constant="55" id="m9R-hJ-d24"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER SCHOOL NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a55-XS-pNJ">
-                                        <rect key="frame" x="0.0" y="200" width="374" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ENTER EMAIL ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Dp-jw-poC" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="195" width="374" height="55"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="MiN-tJ-Jgp"/>
+                                            <constraint firstAttribute="height" constant="55" id="nJw-o1-KVB"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER CLASS NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kn4-w0-nCd">
-                                        <rect key="frame" x="0.0" y="250" width="374" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ENTER SCHOOL NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a55-XS-pNJ" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="260" width="374" height="55"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="8tm-xF-i6C"/>
+                                            <constraint firstAttribute="height" constant="55" id="MiN-tJ-Jgp"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER SPECIALIZED SUBJECTS" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="90x-I3-d2E">
-                                        <rect key="frame" x="0.0" y="300" width="374" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ENTER CLASS NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kn4-w0-nCd" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="325" width="374" height="55"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="MCB-5o-u1b"/>
+                                            <constraint firstAttribute="height" constant="55" id="8tm-xF-i6C"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER SCHOOL NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UMg-qb-WxS">
-                                        <rect key="frame" x="0.0" y="350" width="374" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ENTER SPECIALIZED SUBJECTS" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="90x-I3-d2E" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="390" width="374" height="55"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="ytC-Gy-bUW"/>
+                                            <constraint firstAttribute="height" constant="55" id="MCB-5o-u1b"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ENTER SCHOOL NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UMg-qb-WxS" customClass="AkiraTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="455" width="374" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="ytC-Gy-bUW"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -429,10 +429,10 @@
                                 </userDefinedRuntimeAttributes>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87B-6A-XUn">
-                                <rect key="frame" x="20" y="464" width="374" height="40"/>
+                                <rect key="frame" x="20" y="584" width="374" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="TEy-sE-UXD"/>
+                                    <constraint firstAttribute="height" constant="55" id="TEy-sE-UXD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                 <state key="normal" title="CREATE ACCOUNT">
@@ -443,7 +443,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gf0-U5-PHn">
-                                <rect key="frame" x="30" y="514" width="354" height="20"/>
+                                <rect key="frame" x="30" y="649" width="354" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="SrX-cZ-6dZ"/>
                                 </constraints>

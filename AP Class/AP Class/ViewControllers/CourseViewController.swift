@@ -11,6 +11,8 @@ import UIKit
 class CourseViewController: UIViewController {
     
     var coursesArray = [String]()
+    let courses = ["Computer science", "Biology", "Psychology", "Chemistry", "Physics", "Calculus"]
+    var selectedCourse = ""
     @IBOutlet weak var courseCollectionView: UICollectionView!
     private var floatingButton: UIButton?
     private var courseId: String?
@@ -104,8 +106,8 @@ class CourseViewController: UIViewController {
         
         let saveAction = UIAlertAction(title: "Save", style: .default, handler: { alert -> Void in
             let firstTextField = alertController.textFields![0] as UITextField
-            if let courseId = firstTextField.text {
-                self.coursesArray.append(courseId)
+            if let _ = firstTextField.text {
+                self.coursesArray.append(self.courses[Int.random(in: 0 ..< self.courses.count)])
                 DispatchQueue.main.async {
                     self.courseCollectionView.reloadData()
                 }
@@ -143,4 +145,17 @@ extension CourseViewController: UICollectionViewDelegate, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets.zero
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedCourse = coursesArray[indexPath.item]
+        performSegue(withIdentifier: "CourseInfoSegue", sender: self)
+    }
+}
+extension CourseViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "CourseInfoSegue",
+            let vc = segue.destination as? CourseInfoViewController {
+            vc.courseId = selectedCourse
+        }
+    }
+    
 }

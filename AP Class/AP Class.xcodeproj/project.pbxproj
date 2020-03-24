@@ -57,6 +57,9 @@
 		B683C55D24030A140083AE83 /* BookShelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683C55C24030A140083AE83 /* BookShelfViewController.swift */; };
 		B683C55F24030DD20083AE83 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B683C55E24030DD20083AE83 /* MoreTableViewCell.swift */; };
 		B6A71933240D814100E207C6 /* GradeInfoTableSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A71932240D814100E207C6 /* GradeInfoTableSectionHeader.swift */; };
+		B6B313BB2429B610009DE985 /* CourseInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B313BA2429B610009DE985 /* CourseInfoViewController.swift */; };
+		B6B313BD2429B8BC009DE985 /* CourseInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B313BC2429B8BC009DE985 /* CourseInfoCollectionViewCell.swift */; };
+		B6B313BF2429D02A009DE985 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B313BE2429D02A009DE985 /* DetailsViewController.swift */; };
 		CF0316D28DF3770A6D72EA0A /* Pods_AP_Class.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12B8E697DB31BADBE809965 /* Pods_AP_Class.framework */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +141,9 @@
 		B683C55C24030A140083AE83 /* BookShelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfViewController.swift; sourceTree = "<group>"; };
 		B683C55E24030DD20083AE83 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
 		B6A71932240D814100E207C6 /* GradeInfoTableSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeInfoTableSectionHeader.swift; sourceTree = "<group>"; };
+		B6B313BA2429B610009DE985 /* CourseInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoViewController.swift; sourceTree = "<group>"; };
+		B6B313BC2429B8BC009DE985 /* CourseInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		B6B313BE2429D02A009DE985 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		D72AD7B17586592EB28E8546 /* Pods_AP_ClassTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AP_ClassTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5963360ED3A0C33AE2E2E14 /* Pods-AP Class-AP ClassUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AP Class-AP ClassUITests.release.xcconfig"; path = "Target Support Files/Pods-AP Class-AP ClassUITests/Pods-AP Class-AP ClassUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FE8F425D1469D8787586B75D /* Pods_AP_Class_AP_ClassUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AP_Class_AP_ClassUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +215,8 @@
 		B629CB1F24043ED3004F3DF2 /* Student */ = {
 			isa = PBXGroup;
 			children = (
+				B6B313BA2429B610009DE985 /* CourseInfoViewController.swift */,
+				B6B313BE2429D02A009DE985 /* DetailsViewController.swift */,
 			);
 			path = Student;
 			sourceTree = "<group>";
@@ -340,6 +348,7 @@
 				B6A71932240D814100E207C6 /* GradeInfoTableSectionHeader.swift */,
 				B681DA8E2413BB0F008F3EFC /* ProfilePicTableViewCell.swift */,
 				B681DA902413BB1B008F3EFC /* ProfileTableViewCell.swift */,
+				B6B313BC2429B8BC009DE985 /* CourseInfoCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -620,6 +629,7 @@
 				B683C4F7240276A70083AE83 /* AppDelegate.swift in Sources */,
 				B681DA8F2413BB0F008F3EFC /* ProfilePicTableViewCell.swift in Sources */,
 				B629CB2324043F13004F3DF2 /* TeacherGradeViewController.swift in Sources */,
+				B6B313BF2429D02A009DE985 /* DetailsViewController.swift in Sources */,
 				B683A846240A2500004431ED /* GradeInfo.swift in Sources */,
 				B683C55F24030DD20083AE83 /* MoreTableViewCell.swift in Sources */,
 				B683C4F9240276A70083AE83 /* SceneDelegate.swift in Sources */,
@@ -633,11 +643,13 @@
 				B683A8422409AE31004431ED /* GradeInfoViewController.swift in Sources */,
 				B683C55D24030A140083AE83 /* BookShelfViewController.swift in Sources */,
 				B629CB2124043F06004F3DF2 /* TeacherClassViewController.swift in Sources */,
+				B6B313BD2429B8BC009DE985 /* CourseInfoCollectionViewCell.swift in Sources */,
 				B683C5552402F9A30083AE83 /* CourseViewController.swift in Sources */,
 				B683C5412402BACE0083AE83 /* LoginAndSignupViewController.swift in Sources */,
 				B683C53224028C6C0083AE83 /* HomeViewController.swift in Sources */,
 				B683A83A24098BBC004431ED /* GradeViewController.swift in Sources */,
 				B683C5452402CC810083AE83 /* ViewExtensions.swift in Sources */,
+				B6B313BB2429B610009DE985 /* CourseInfoViewController.swift in Sources */,
 				B683C54F2402F0D10083AE83 /* ProfileViewController.swift in Sources */,
 				B683C5432402C9E60083AE83 /* GlobalFunctions.swift in Sources */,
 				B683C5492402DC3A0083AE83 /* TeacherSignupViewController.swift in Sources */,
